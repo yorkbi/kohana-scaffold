@@ -307,7 +307,6 @@ class Model_". ucfirst($this->column) ." extends ORM
 	
 	public function action_delete($request, $id)
 	{
-		exit;
 		$this->column = $request;
 		$this->_get_schema();
 		
