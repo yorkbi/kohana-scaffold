@@ -16,8 +16,8 @@
 					<table width="100%" cellpadding="0" cellspacing="0">
 						<tfoot>
 							<tr>
-								<td><input type="hidden" name="column" value="<?php echo strtolower($column); ?>" style="display:none" /></td>
-								<td><?php echo Form::submit('', __("Save"), Array("class"=>"submit")); ?> <span><?php echo __("or") ?></span> <?php echo HTML::anchor('scaffold/list/'.strtolower($column), __("Cancel")); ?></td>
+								<td><input type="hidden" name="column" value="<?php echo $column; ?>" style="display:none" /></td>
+								<td><?php echo Form::submit('', __("Save"), Array("class"=>"submit")); ?> <span><?php echo __("or") ?></span> <?php echo HTML::anchor('scaffold/list/'.$column, __("Cancel")); ?></td>
 							</tr>
 						</tfoot>
 						<tbody>
